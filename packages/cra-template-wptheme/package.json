@@ -1,6 +1,6 @@
 {
   "name": "cra-template-wptheme",
-  "version": "3.4.1-wp.1",
+  "version": "5.0.1",
   "keywords": [
     "wordpress",
     "create-react-app",
@@ -21,7 +21,7 @@
   "main": "template.json",
   "repository": {
     "type": "git",
-    "url": "https://github.com/devloco/create-react-wptheme.git"
+    "url": "https://github.com/jordan-trahanov/create-react-wptheme.git"
   },
   "license": "MIT",
   "engines": {

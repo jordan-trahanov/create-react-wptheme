@@ -1,6 +1,6 @@
 {
   "name": "@devloco/create-react-wptheme-utils",
-  "version": "3.4.1-wp.2",
+  "version": "5.0.1",
   "description": "Utilities used by create-react-wptheme.",
   "engines": {
     "node": ">=8"
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/devloco/create-react-wptheme"
+    "url": "https://github.com/jordan-trahanov/create-react-wptheme.git"
   },
   "author": "devloco",
   "license": "MIT",

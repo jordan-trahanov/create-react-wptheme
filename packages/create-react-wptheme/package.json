@@ -1,6 +1,6 @@
 {
   "name": "create-react-wptheme",
-  "version": "3.4.1-wp.1",
+  "version": "5.0.1",
   "description": "Create React-enabled WP themes.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/devloco/create-react-wptheme.git"
+    "url": "https://github.com/jordan-trahanov/create-react-wptheme.git"
   },
   "keywords": [
     "wordpress",
@@ -37,7 +37,7 @@
     "index.js",
     "createReactWpTheme.js"
   ],
-  "homepage": "https://github.com/devloco/create-react-wptheme",
+  "homepage": "https://github.com/jordan-trahanov/create-react-wptheme",
   "bin": {
     "create-react-wptheme": "./index.js"
   },
