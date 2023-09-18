@@ -33,5 +33,5 @@ Now, back in your command prompt, rerun the "start" script again...
 <script>
   setTimeout(function() {
     window.location.replace(window.location);
-  }, 3000);
+  }, 1500);
 </script>
