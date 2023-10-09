@@ -2,7 +2,7 @@
   "name": "@canufeelit/create-react-wptheme-error-overlay",
   "version": "5.0.1",
   "private": false,
-  "description": "create-react-wptheme client with error overlay",
+  "description": "create-react-wptheme5 client with error overlay",
   "main": "wptheme-error-overlay.js",
   "scripts": {
     "build": "npx webpack"

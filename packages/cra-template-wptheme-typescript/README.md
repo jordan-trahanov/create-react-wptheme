@@ -1,4 +1,4 @@
-# cra-template-wptheme-typescript
+# cra-template-wptheme-typescript5
 
 This is the official TypeScript template for [Create React WPTheme](https://github.com/jordan-trahanov/create-react-wptheme).
 
@@ -7,7 +7,7 @@ To use this template, add `--typescript` when creating a new wp theme.
 For example:
 
 ```sh
-npx create-react-wptheme my-theme --typescript
+npx create-react-wptheme5 my-theme --typescript
 ```
 
 # Create React WP Theme

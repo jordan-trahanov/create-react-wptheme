@@ -2,7 +2,7 @@
   "name": "@canufeelit/create-react-wptheme-utils",
   "version": "5.0.1",
   "private": false,
-  "description": "Utilities used by create-react-wptheme.",
+  "description": "Utilities used by create-react-wptheme5.",
   "engines": {
     "node": ">=8"
   },

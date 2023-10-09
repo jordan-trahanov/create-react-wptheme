@@ -1,11 +1,11 @@
 {
-  "name": "cra-template-wptheme-typescript",
+  "name": "cra-template-wptheme-typescript5",
   "version": "5.0.1",
   "private": false,
   "keywords": [
     "react",
     "create-react-app",
-    "create-react-wptheme",
+    "create-react-wptheme5",
     "template",
     "typescript"
   ],

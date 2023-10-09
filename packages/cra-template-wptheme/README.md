@@ -1,4 +1,4 @@
-# cra-template-wptheme
+# cra-template-wptheme5
 
 This is the official base template for [Create React WPTheme](https://github.com/jordan-trahanov/create-react-wptheme).
 

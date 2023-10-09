@@ -8,16 +8,16 @@
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //   /!\ DO NOT MODIFY THIS FILE /!\
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// The only job of create-react-wptheme is to init the repository and then
-// forward all the commands to the local version of create-react-wptheme.
+// The only job of create-react-wptheme5 is to init the repository and then
+// forward all the commands to the local version of create-react-wptheme5.
 //
 // If you need to add a new command, please add it to the scripts/ folder.
 //
 // The only reason to modify this file is to add more warnings and
-// troubleshooting information for the `create-react-wptheme` command.
+// troubleshooting information for the `create-react-wptheme5` command.
 //
 // Do not make breaking changes! We absolutely don't want to have to
-// tell people to update their global version of create-react-wptheme.
+// tell people to update their global version of create-react-wptheme5.
 //
 // Also be careful with new language features.
 // This file must work on Node 6+.
@@ -106,7 +106,7 @@ const program = new commander.Command(packageJson.name)
   })
   .option(
     "--verbose",
-    "force create-react-app to print additional logs (NOTE: create-react-wptheme is always verbose)"
+    "force create-react-app to print additional logs (NOTE: create-react-wptheme5 is always verbose)"
   )
   .option("--info", "print environment debug info")
   .option(
@@ -252,11 +252,11 @@ function createWpTheme(
   const packageToInstall = "create-react-app";
 
   if (useTypescript === true) {
-    template = "wptheme-typescript";
+    template = "wptheme-typescript5";
   }
 
   if (typeof template !== "string" || template.trim().length === 0) {
-    template = "wptheme";
+    template = "wptheme5";
   }
 
   return Promise.resolve(packageToInstall)

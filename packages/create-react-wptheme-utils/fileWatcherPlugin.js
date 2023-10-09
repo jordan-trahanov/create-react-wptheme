@@ -12,14 +12,14 @@
 /// this plugin causes WebPack to do a rebuild by touching a file under WebPack's control when
 /// a file *not* under WebPack's control changes.
 ///
-/// Usage example: (to watch all JS, CSS and PHP files under the "public" folder in a create-react-wptheme project (or create-react-app project))
+/// Usage example: (to watch all JS, CSS and PHP files under the "public" folder in a create-react-wptheme5 project (or create-react-app project))
 ///     NOTE: "touchFile" is used to force WebPack to do a rebuild. It must be a file that WebPack is watching.
 ///
 /// const FileWatcherPlugin = require("./fileWatcherPlugin.wptheme");
 /// ...
 /// plugins: [
 //      new FileWatcherPlugin({
-//          touchFile: "./public/index.php",  // create-react-wptheme emits index.php and thus it is watched by WebPack...
+//          touchFile: "./public/index.php",  // create-react-wptheme5 emits index.php and thus it is watched by WebPack...
 //          ignored: "./public/index.php",    // ... so no need to watch it here as well. Without ignoring it, you'd cause infinite build loops.
 //          watchFileGlobs: ["./public/**/*.js", "./public/**/*.css", "./public/**/*.php"]
 //      }),

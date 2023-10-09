@@ -6,13 +6,13 @@ May 6, 2020
 <br />
 Just wanted to note that version [v3.4.1](https://github.com/facebook/create-react-app/releases/tag/v3.4.1) of [Create-React-App](https://create-react-app.dev/) is still the latest.
 
-If you have a theme made with an earlier version of `create-react-wptheme` and want to update it to the latest code, [just follow these instructions](#updating-existing-themes).
+If you have a theme made with an earlier version of `create-react-wptheme5` and want to update it to the latest code, [just follow these instructions](#updating-existing-themes).
 
 ---
 
 ## Getting Started <!-- omit in toc -->
 
-[Michael Soriano](https://github.com/michaelsoriano) is writing a tutorial for creating a theme using React. He uses `create-react-wptheme` for the initial setup. He provides a lot more detail than this `readme` and the screen shots are really helpful.
+[Michael Soriano](https://github.com/michaelsoriano) is writing a tutorial for creating a theme using React. He uses `create-react-wptheme5` for the initial setup. He provides a lot more detail than this `readme` and the screen shots are really helpful.
 
 Check it out:
 <br>
@@ -38,17 +38,17 @@ For more details check out the rest of this document.
 
 ## Creating a New Theme
 
-To create a WordPress theme using `create-react-wptheme`, follow these steps.
+To create a WordPress theme using `create-react-wptheme5`, follow these steps.
 
 - Make sure your WordPress server is up and running.
 - Change dir into your WordPress themes folder (**this is just an example, use your real themes folder**).
   - Windows: `cd C:\xampp\htdocs\wordpress\wp-content\themes`
   - Mac or \*nix: `cd /xampp/htdocs/wordpress/wp-content/themes`
-- Use `npx create-react-wptheme` to make a new theme
+- Use `npx create-react-wptheme5` to make a new theme
   - For example: (**replace "my_react_theme" with whatever you want your theme to be named**):
-  - `npx create-react-wptheme my_react_theme`
+  - `npx create-react-wptheme5 my_react_theme`
     - If you want to use TypeScript, then the command would be:
-    - `npx create-react-wptheme my_react_theme --typescript`
+    - `npx create-react-wptheme5 my_react_theme --typescript`
 - When it finishes it'll tell you to change into your new theme's folder and run the Nodejs watcher (replace "my_react_theme" with the same name you used in the previous step):
   - `cd my_react_theme/react-src`
   - `npm run start`
@@ -89,7 +89,7 @@ If your theme uses TypeScript, you'll need to modify the theme's `react-app-env.
 
 ### React Tutorials
 
-If you're looking at a React tutorial on the web, you can use `create-react-wptheme` in place of `create-react-app`.
+If you're looking at a React tutorial on the web, you can use `create-react-wptheme5` in place of `create-react-app`.
 <br>But you do have to remember that the React app code is one extra folder down inside your theme folder.
 <br>Notice that the final folder in this path is `react-src`:
 
@@ -117,7 +117,7 @@ If you develop using SSL (i.e. HTTPS), then you might want to run the `Browser R
 
 To configure the `Browser Refresh Server` to use SSL, follow these steps:
 
-- Assuming you've already created a theme using `create-react-wptheme`, change directory into the `react-src` folder in your theme's folder
+- Assuming you've already created a theme using `create-react-wptheme5`, change directory into the `react-src` folder in your theme's folder
   - Be sure to follow **all the instructions** under the **Usage** section at the top of this document. You need to complete the PHP portion of the setup before you can configure SSL.
   - Windows example: `cd C:\xampp\htdocs\wordpress\wp-content\themes\<Your Theme's Root Folder>\react-src`
   - Mac or \*nix example: `cd /xampp/htdocs/wordpress/wp-content/themes/<Your Theme's Root Folder>/react-src`
