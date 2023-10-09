@@ -1,7 +1,6 @@
 {
   "name": "create-react-wptheme",
   "version": "5.0.1",
-  "private": false,
   "description": "Create React-enabled WP themes.",
   "main": "index.js",
   "scripts": {
@@ -26,13 +25,13 @@
     "react-wordpress-themes",
     "php"
   ],
-  "author": "devloco",
+  "author": "canufeelit",
   "license": "MIT",
   "engines": {
     "node": ">=8"
   },
   "bugs": {
-    "url": "https://github.com/devloco/create-react-wptheme/issues"
+    "url": "https://github.com/jordan-trahanov/create-react-wptheme/issues"
   },
   "files": [
     "index.js",

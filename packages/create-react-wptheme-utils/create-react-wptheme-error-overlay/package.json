@@ -7,7 +7,7 @@
   "scripts": {
     "build": "npx webpack"
   },
-  "author": "devloco",
+  "author": "canufeelit",
   "license": "MIT",
   "homepage": "https://github.com/jordan-trahanov/create-react-wptheme",
   "repository": {

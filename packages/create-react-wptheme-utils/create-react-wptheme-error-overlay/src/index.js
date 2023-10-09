@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2018-present, https://github.com/devloco
+ * Copyright (c) 2018-present, https://github.com/jordan-trahanov
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -24,78 +24,84 @@ var hasCompileErrors = false;
 // See https://github.com/facebookincubator/create-react-app/issues/3096
 var hadRuntimeError = false;
 var runtimeOptions = {
-    onError: function() {
-        hadRuntimeError = true;
-    },
-    filename: "/static/js/bundle.js"
+  onError: function () {
+    hadRuntimeError = true;
+  },
+  filename: "/static/js/bundle.js",
 };
 ErrorOverlay.startReportingRuntimeErrors(runtimeOptions);
 
 export function clearConsole() {
-    // Clean up outdated compile errors, if any.
-    if (typeof console !== "undefined" && typeof console.clear === "function") {
-        console.clear();
-    }
+  // Clean up outdated compile errors, if any.
+  if (typeof console !== "undefined" && typeof console.clear === "function") {
+    console.clear();
+  }
 }
 
 export function handleSuccess() {
-    // Successful compilation.
-    clearConsole();
-    isFirstCompilation = false;
-    hasCompileErrors = false;
-    hadRuntimeError = false;
+  // Successful compilation.
+  clearConsole();
+  isFirstCompilation = false;
+  hasCompileErrors = false;
+  hadRuntimeError = false;
 }
 
 export function handleWarnings(warnings) {
-    //clearConsole();
+  //clearConsole();
 
-    // var isHotUpdate = !isFirstCompilation;
-    isFirstCompilation = false;
-    hasCompileErrors = false;
+  // var isHotUpdate = !isFirstCompilation;
+  isFirstCompilation = false;
+  hasCompileErrors = false;
 
-    function printWarnings() {
-        // Print warnings to the console.
-        var formatted = formatWebpackMessages({
-            warnings: warnings,
-            errors: []
-        });
+  function printWarnings() {
+    // Print warnings to the console.
+    var formatted = formatWebpackMessages({
+      warnings: warnings,
+      errors: [],
+    });
 
-        if (typeof console !== "undefined" && typeof console.warn === "function") {
-            for (var i = 0; i < formatted.warnings.length; i++) {
-                if (i === 5) {
-                    console.warn("There were more warnings in other files.\n" + "You can find a complete log in the terminal.");
-                    break;
-                }
-
-                console.warn(stripAnsi(formatted.warnings[i]));
-            }
+    if (typeof console !== "undefined" && typeof console.warn === "function") {
+      for (var i = 0; i < formatted.warnings.length; i++) {
+        if (i === 5) {
+          console.warn(
+            "There were more warnings in other files.\n" +
+              "You can find a complete log in the terminal."
+          );
+          break;
         }
-    }
 
-    printWarnings();
+        console.warn(stripAnsi(formatted.warnings[i]));
+      }
+    }
+  }
+
+  printWarnings();
 }
 
 export function handleErrors(errors) {
-    //clearConsole();
+  //clearConsole();
 
-    isFirstCompilation = false;
-    hasCompileErrors = true;
+  isFirstCompilation = false;
+  hasCompileErrors = true;
 
-    // Format webpack messages.
-    var formatted = formatWebpackMessages({
-        errors: errors,
-        warnings: []
-    });
+  // Format webpack messages.
+  var formatted = formatWebpackMessages({
+    errors: errors,
+    warnings: [],
+  });
 
-    if (Array.isArray(formatted.errors) && formatted.errors.length > 0) {
-        // Only show the first error.
-        ErrorOverlay.reportBuildError(formatted.errors[0]);
-    } else {
-        if (typeof console !== "undefined" && typeof console.error === "function") {
-            console.error("UNKNOWN ERROR from react-scripts-wptheme-error-overlay:handleErrors:", errors);
-        }
+  if (Array.isArray(formatted.errors) && formatted.errors.length > 0) {
+    // Only show the first error.
+    ErrorOverlay.reportBuildError(formatted.errors[0]);
+  } else {
+    if (typeof console !== "undefined" && typeof console.error === "function") {
+      console.error(
+        "UNKNOWN ERROR from react-scripts-wptheme-error-overlay:handleErrors:",
+        errors
+      );
     }
+  }
 
-    // Do not attempt to reload now.
-    // We will reload on next success instead.
+  // Do not attempt to reload now.
+  // We will reload on next success instead.
 }

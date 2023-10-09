@@ -29,7 +29,7 @@
     "node": ">=8"
   },
   "bugs": {
-    "url": "https://github.com/devloco/create-react-wptheme/issues"
+    "url": "https://github.com/jordan-trahanov/create-react-wptheme/issues"
   },
   "files": [
     "template",

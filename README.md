@@ -218,4 +218,4 @@ I'm grateful to the authors of existing related projects for their ideas and col
 
 ## License
 
-Create React WP Theme is open source software [licensed as MIT](https://github.com/devloco/create-react-wptheme/blob/master/LICENSE).
+Create React WP Theme is open source software [licensed as MIT](https://github.com/jordan-trahanov/create-react-wptheme/blob/master/LICENSE).

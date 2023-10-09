@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2019-present, https://github.com/devloco
+ * Copyright (c) 2019-present, https://github.com/jordan-trahanov
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -83,7 +83,7 @@ const scriptsFromGit = function () {
       "Cloning @canufeelit/create-react-app/react-scripts from GitHub..."
     )
   );
-  execSync("git clone https://github.com/devloco/create-react-app.git");
+  execSync("git clone https://github.com/jordan-trahanov/create-react-app.git");
   process.chdir("..");
   let scriptsPath =
     "file:" +
@@ -124,7 +124,7 @@ const program = new commander.Command(packageJson.name)
     );
     console.log(
       `      ${chalk.cyan(
-        "https://github.com/devloco/create-react-wptheme/issues/new"
+        "https://github.com/jordan-trahanov/create-react-wptheme/issues/new"
       )}`
     );
     console.log();
@@ -429,7 +429,9 @@ function catchHandler(reason) {
     console.log(chalk.red("Unexpected error."), reason);
     console.log();
     console.log("Please report it as a bug here:");
-    console.log("https://github.com/devloco/create-react-wptheme/issues");
+    console.log(
+      "https://github.com/jordan-trahanov/create-react-wptheme/issues"
+    );
   }
 
   console.log();

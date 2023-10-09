@@ -13,10 +13,10 @@
     "type": "git",
     "url": "https://github.com/jordan-trahanov/create-react-wptheme.git"
   },
-  "author": "devloco",
+  "author": "canufeelit",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/devloco/create-react-wptheme/issues"
+    "url": "https://github.com/jordan-trahanov/create-react-wptheme/issues"
   },
   "files": [
     "fileFunctions.js",
