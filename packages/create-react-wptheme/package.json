@@ -1,6 +1,7 @@
 {
   "name": "create-react-wptheme",
   "version": "5.0.1",
+  "private": false,
   "description": "Create React-enabled WP themes.",
   "main": "index.js",
   "scripts": {

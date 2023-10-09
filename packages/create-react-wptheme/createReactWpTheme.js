@@ -51,7 +51,7 @@ const _getScriptsPath = function () {
 const scriptsFromNpm = function () {
   //console.log("SCRIPTS FROM NPM");
   return {
-    path: `@devloco/react-scripts-wptheme@${_reactScriptsWpThemeVersion}`,
+    path: `@canufeelit/react-scripts-wptheme@${_reactScriptsWpThemeVersion}`,
   };
 };
 
@@ -80,7 +80,7 @@ const scriptsFromGit = function () {
   const tempPath = process.cwd();
   console.log(
     chalk.magenta(
-      "Cloning @devloco/create-react-app/react-scripts from GitHub..."
+      "Cloning @canufeelit/create-react-app/react-scripts from GitHub..."
     )
   );
   execSync("git clone https://github.com/devloco/create-react-app.git");
@@ -175,7 +175,7 @@ function printValidationResults(results) {
 
 console.log(program.name() + " version: " + chalk.magenta(_wpThemeVersion));
 console.log(
-  "@devloco/react-scripts-wptheme version: " +
+  "@canufeelit/react-scripts-wptheme version: " +
     chalk.magenta(_reactScriptsWpThemeVersion)
 );
 console.log();
@@ -365,7 +365,7 @@ function checkAppName(appName) {
     "react",
     "react-dom",
     "react-scripts",
-    "@devloco/react-scripts-wptheme",
+    "@canufeelit/react-scripts-wptheme",
   ].sort();
   if (dependencies.indexOf(appName) >= 0) {
     console.error(

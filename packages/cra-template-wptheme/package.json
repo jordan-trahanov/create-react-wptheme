@@ -1,6 +1,7 @@
 {
   "name": "cra-template-wptheme",
   "version": "5.0.1",
+  "private": false,
   "keywords": [
     "wordpress",
     "create-react-app",

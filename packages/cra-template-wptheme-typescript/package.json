@@ -1,6 +1,7 @@
 {
   "name": "cra-template-wptheme-typescript",
   "version": "5.0.1",
+  "private": false,
   "keywords": [
     "react",
     "create-react-app",
